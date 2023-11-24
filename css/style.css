@@ -269,6 +269,31 @@ legend {
   color: inherit;
   white-space: normal; }
 
+  
+.programming-languages, .libraries-frameworks, .tools-platforms, .databases {
+    margin-bottom: 1.5em;
+}
+
+.category-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5em 1em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+}
 progress {
   vertical-align: baseline; }
 
