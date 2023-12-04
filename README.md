@@ -10,20 +10,20 @@ Welcome to the Juan Pablo Lagos - Software Engineer Portfolio project! This proj
 - [Contact](#contact)
 
 ## Introduction
-This web page serves as the online portfolio for Juan Pablo Lagos Idrobo, providing information about his education, work experience, skills, and showcasing various software projects. The portfolio is designed to highlight Juan Pablo's expertise in software engineering and his passion for technology.
+This web page serves as the online portfolio, providing information about his education, work experience, skills, and showcasing various software projects. The portfolio is designed to highlight my expertise in software engineering and his passion for technology.
 
 ## Features
 - **Navigation:** The webpage features a navigation bar that allows users to easily navigate to different sections such as Home, Experience, Projects, About, and Contact.
 
 - **Responsive Design:** The portfolio is designed to be responsive, ensuring a seamless experience across various devices.
 
-- **Dynamic Content:** The "Skills" section includes dynamic content that showcases Juan Pablo's proficiency in different programming languages, libraries/frameworks, tools/platforms, and databases.
+- **Dynamic Content:** The "Skills" section includes dynamic content that showcases my proficiency in different programming languages, libraries/frameworks, tools/platforms, and databases.
 
 - **Project Showcase:** The "Projects" section highlights several side projects, providing brief descriptions and links to their respective GitHub repositories.
 
-- **About Me:** The "About" section provides insights into Juan Pablo's background, skills, and includes a link to download his resume.
+- **About Me:** The "About" section provides insights into my background, skills, and includes a link to download his resume.
 
-- **Contact Information:** The "Contact" section includes various ways to connect with Juan Pablo, including links to his LinkedIn, GitHub, email, and personal website.
+- **Contact Information:** The "Contact" section includes various ways to connect with me, including links to his LinkedIn, GitHub, email, and personal website.
 
 ## Technologies Used
 - HTML
