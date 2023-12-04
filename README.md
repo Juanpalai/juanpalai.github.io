@@ -4,7 +4,6 @@ You can check it out here: https://juanpalai.github.io/
 
 Welcome to the Juan Pablo Lagos - Software Engineer Portfolio project! This project showcases my professional portfolio, a skilled Software Engineer. Below are the details to help you navigate and understand the structure of this project. 🌐💻
 
-Check it out here: https://lnkd.in/greF3_ia
 
 ## Table of Contents
 - [Introduction](#introduction)
