@@ -38,7 +38,7 @@ This web page serves as the online portfolio, providing information about my edu
 
 ## Setup
 To set up the project locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/username/repository.git`
+1. Clone the repository: `git clone https://github.com/Juanpalai/juanpalai.github.io.git`
 2. Open the `index.html` file in a web browser.
 
 ## Contact
