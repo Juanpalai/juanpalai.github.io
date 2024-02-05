@@ -9697,3 +9697,11 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.bordered-heading {
+  border-top: 4px; 
+  padding-top: 10px;
+  margin-top: 10px; 
+  color: #333; 
+  font-weight: bold;
+}
