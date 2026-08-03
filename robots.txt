@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juanpalai.github.io/sitemap.xml

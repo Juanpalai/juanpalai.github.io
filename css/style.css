@@ -269,31 +269,6 @@ legend {
   color: inherit;
   white-space: normal; }
 
-  
-.programming-languages, .libraries-frameworks, .tools-platforms, .databases {
-    margin-bottom: 1.5em;
-}
-
-.category-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill {
-    background-color: #c2e5fc;
-    color: rgb(0, 0, 0);
-    padding: 0.5em 1em;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    border-radius: 5px;
-}
 progress {
   vertical-align: baseline; }
 
@@ -8163,7 +8138,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999; }
+  color: #4a4a4a; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8177,8 +8152,7 @@ a {
   color: #3e64ff; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #3e64ff;
-    outline: none !important; }
+    color: #3e64ff; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -8315,8 +8289,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: .1em; }
     .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
       text-decoration: none;
-      color: #3e64ff;
-      outline: none !important; }
+      color: #3e64ff; }
   .ftco-navbar-light.scrolled {
     position: fixed;
     right: 0;
@@ -8751,7 +8724,7 @@ h1, h2, h3, h4, h5,
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
     color: #3e64ff; }
-  .resume-wrap h2 {
+  .resume-wrap h3 {
     font-size: 24px;
     font-weight: 700; }
   .resume-wrap .position {
@@ -8970,9 +8943,9 @@ h1, h2, h3, h4, h5,
     .project.img-2 .text {
       max-width: 45%;
       z-index: 1; }
-      .project.img-2 .text h3 {
+      .project.img-2 .text h4 {
         font-size: 22px; }
-        .project.img-2 .text h3 a {
+        .project.img-2 .text h4 a {
           color: #fff; }
       .project.img-2 .text span {
         color: rgba(255, 255, 255, 0.8);
@@ -9011,9 +8984,9 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .project .text h3 {
+    .project .text h4 {
       font-size: 20px; }
-      .project .text h3 a {
+      .project .text h4 a {
         color: #fff; }
     .project .text span {
       color: rgba(255, 255, 255, 0.8);
@@ -9070,7 +9043,7 @@ textarea.form-control {
       padding-top: 5em;
       padding-bottom: 5em; } }
 
-.ftco-animate {
+html.js .ftco-animate {
   opacity: 0;
   visibility: hidden; }
 
@@ -9211,7 +9184,7 @@ textarea.form-control {
     text-transform: uppercase;
     color: black;
     letter-spacing: 3px; }
-  .heading-section h1.big {
+  .heading-section .big {
     position: absolute;
     top: 0px;
     left: 0;
@@ -9219,7 +9192,7 @@ textarea.form-control {
     color: rgba(255, 255, 255, 0.1);
     z-index: -1;
     font-weight: 900; }
-    .heading-section h1.big.big-2 {
+    .heading-section .big.big-2 {
       right: 0; }
   .heading-section h2 {
     font-size: 50px;
@@ -9443,7 +9416,6 @@ textarea.form-control {
       width: 100%; } }
 
 .block-9 .form-control {
-  outline: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   font-size: 15px; }
@@ -9641,7 +9613,7 @@ textarea.form-control {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-#ftco-loader.show {
+html.js #ftco-loader.show {
   -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
   -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
   transition: opacity .4s ease-out, visibility 0s linear 0s;

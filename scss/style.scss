@@ -1,6 +1,14 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
+// NOTE: This file compiles to css/style.css. No build tool is used in this
+// project, so css/style.css is the file actually served.
+//
+// Accessibility, responsive and visual refinements (skip-link, focus states,
+// skills chips, reduced-motion, mobile nav) live in css/custom.css, which is
+// loaded after css/style.css. Keep custom.css in sync with this file's output
+// when rebuilding.
+
 $font-primary: 'Poppins',Arial, sans-serif;
 
 $white: #fff;
@@ -36,7 +44,7 @@ body {
 	font-size: 16px;
 	line-height: 1.8;
 	font-weight: 400;
-	color: lighten($black,60%);
+	color: lighten($black,29%);
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
@@ -50,7 +58,6 @@ a {
 	&:hover, &:focus {
 		text-decoration: none;
 		color: $primary;
-		outline: none !important;
 	}
 }
 h1, h2, h3, h4, h5,
@@ -230,7 +237,6 @@ h1, h2, h3, h4, h5,
 		&:hover, &:focus {
 			text-decoration: none;
 			color: $primary;
-			outline: none !important;
 		}
 	}
 	
@@ -575,9 +581,6 @@ h1, h2, h3, h4, h5,
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 600;
-	&:hover, &:active, &:focus {
-		outline: none;
-	}
 	&.btn-primary {
 		background: $primary;
 		border: 1px solid $primary !important;
@@ -765,7 +768,7 @@ h1, h2, h3, h4, h5,
 		color: rgba(0,0,0,.6);
 		color: $primary;
 	}
-	h2{
+	h3{
 		font-size: 24px;
 		font-weight: 700;
 	}
@@ -1030,7 +1033,7 @@ h1, h2, h3, h4, h5,
 		.text{
 			max-width: 45%;
 			z-index: 1;
-			h3{
+			h4{
 				font-size: 22px;
 				a{
 					color: $white;
@@ -1070,7 +1073,7 @@ h1, h2, h3, h4, h5,
 		z-index: 1;
 		opacity: 0;
 		@include transition(.3s);
-		h3{
+		h4{
 			font-size: 20px;
 			a{
 				color: $white;
@@ -1147,7 +1150,7 @@ textarea.form-control {
   }
 }
 
-.ftco-animate {
+html.js .ftco-animate {
 	opacity: 0;
 	visibility: hidden;
 }
@@ -1345,7 +1348,7 @@ textarea.form-control {
 		color: rgba(0,0,0,1);
 		letter-spacing: 3px;
 	}
-	h1.big{
+	.big{
 		position: absolute;
 		top: 0px;
 		left: 0;
@@ -1911,7 +1914,7 @@ textarea.form-control {
 	box-shadow: none;
 }
 
-#ftco-loader.show {
+html.js #ftco-loader.show {
 	transition: opacity .4s ease-out, visibility 0s linear 0s;
 	visibility: visible;
 	opacity: 1;
