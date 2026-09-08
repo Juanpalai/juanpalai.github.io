@@ -1,50 +1,50 @@
-# Juan Pablo Lagos - Software Engineer Portfolio
+# Juan Pablo Lagos, Robotics Simulation Engineer
 
-You can check it out here: https://juanpalai.github.io/
+Live at https://juanpalai.github.io/
 
-Welcome to the Juan Pablo Lagos - Software Engineer Portfolio project! This project showcases my professional portfolio, a skilled Software Engineer. Below are the details to help you navigate and understand the structure of this project. 🌐💻
+Portfolio site for Juan Pablo Lagos, a robotics software engineer specialized in simulation. The site presents my experience building autonomous-driving and delivery simulators in Unity and Unreal, ROS 2 / Autoware work, side projects in data science and software, and my background in game development.
 
+## Design
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Contact](#contact)
-
-## Introduction
-This web page serves as the online portfolio, providing information about my education, work experience, skills, and showcasing various software projects. The portfolio is designed to highlight my expertise in software engineering and my passion for technology.
+Built from scratch with a "mission console" visual identity: a technical grid background, an animated hero that draws an autonomous navigation path over an occupancy map, and a dark palette with teal and amber accents. No template, no trackers.
 
 ## Features
-- **Navigation:** The webpage features a navigation bar that allows users to easily navigate to different sections such as Home, Experience, Projects, About, and Contact.
 
-- **Responsive Design:** The portfolio is designed to be responsive, ensuring a seamless experience across various devices.
+- **Single page, no dependencies**: semantic HTML, one hand-written stylesheet (`css/site.css`), and one vanilla JavaScript file (`js/site.js`). No Bootstrap, jQuery, or build step.
+- **Sections**: Experience timeline, Projects, Skills, Education, About, and Contact, with a fixed top navigation that highlights the active section.
+- **Accessibility**: skip link, visible keyboard focus, `prefers-reduced-motion` support (the hero renders statically), and AA contrast.
+- **Responsive**: works from mobile to desktop, with an accessible hamburger menu on small screens.
+- **SEO**: meta description, Open Graph and Twitter cards, JSON-LD structured data, canonical URL, sitemap, and robots.txt.
 
-- **Dynamic Content:** The "Skills" section includes dynamic content that showcases my proficiency in different programming languages, libraries/frameworks, tools/platforms, and databases.
+## Project structure
 
-- **Project Showcase:** The "Projects" section highlights several side projects, providing brief descriptions and links to their respective GitHub repositories.
-
-- **About Me:** The "About" section provides insights into my background, skills, and includes a link to download my resume.
-
-- **Contact Information:** The "Contact" section includes various ways to connect with me, including links to my LinkedIn, GitHub, email, and personal website.
-
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- jQuery
-- Various libraries and frameworks for styling and animations
+```text
+index.html        Page markup (content + inline SVG)
+css/site.css      All styles (design tokens, layout, responsive)
+js/site.js        Vanilla JS: nav state, mobile menu, hero animation
+images/           Project images, skill logos, favicon
+```
 
 ## Setup
-To set up the project locally, follow these steps:
+
+This is a static site. To run it locally:
+
 1. Clone the repository: `git clone https://github.com/Juanpalai/juanpalai.github.io.git`
-2. Open the `index.html` file in a web browser.
+2. Serve it from the project folder, for example:
+
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+3. Open http://localhost:8000/ in a browser.
+
+## Deploy
+
+Push to the `main` branch and GitHub Pages publishes the site automatically.
 
 ## Contact
+
 - LinkedIn: [Juan Pablo Lagos Idrobo](https://www.linkedin.com/in/juanpalai/)
 - GitHub: [Juanpalai](https://github.com/Juanpalai/)
 - Email: [juan.pablo.lagosi@gmail.com](mailto:juan.pablo.lagosi@gmail.com)
-- Website: [juanpalai.github.io](#)
-
-Thank you for visiting my portfolio!
+- Website: https://juanpalai.github.io/
