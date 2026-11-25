@@ -24,6 +24,9 @@
 		content="Robotics software engineer specialized in simulation, building autonomous-driving and delivery simulators and ROS 2 / Autoware stacks. Based in Tokyo.">
 	<meta property="og:url" content="https://juanpalai.github.io/">
 	<meta property="og:image" content="https://juanpalai.github.io/images/og-cover.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Juan Pablo Lagos, robotics simulation engineer, based in Tokyo.">
 	<meta property="og:locale" content="en_US">
 
 	<!-- Twitter Card -->
@@ -40,7 +43,7 @@
 			"@type": "Person",
 			"name": "Juan Pablo Lagos Idrobo",
 			"url": "https://juanpalai.github.io/",
-			"image": "https://juanpalai.github.io/images/about.jpg",
+			"image": "https://juanpalai.github.io/images/about.webp",
 			"jobTitle": "Robotics Software Engineer",
 			"description": "Robotics software engineer specialized in simulation and autonomous systems, built on a foundation in realtime engines and data science.",
 			"email": "mailto:juan.pablo.lagosi@gmail.com",
@@ -57,10 +60,8 @@
 		}
 	</script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-		rel="stylesheet">
+	<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 	<link rel="stylesheet" href="css/site.css">
 </head>
@@ -458,8 +459,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://www.kaggle.com/code/juanpablolagos/titanic-logistic-regression-model?scriptVersionId=159913515"
 							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/titanic.jpg" alt="" loading="lazy" decoding="async" width="500"
-								height="500">
+							<img src="images/titanic.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/titanic.webp 84w, images/titanic-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a
@@ -475,8 +478,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://www.kaggle.com/code/juanpablolagos/obesity-risk-lgbmclassifier"
 							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/Obesity_Risk.jpg" alt="" loading="lazy" decoding="async" width="500"
-								height="500">
+							<img src="images/obesity-risk.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/obesity-risk.webp 84w, images/obesity-risk-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a
@@ -492,8 +497,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://www.kaggle.com/code/juanpablolagos/regression-flood-prediction/notebook"
 							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/Flood.jpg" alt="" loading="lazy" decoding="async" width="500"
-								height="500">
+							<img src="images/flood.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/flood.webp 84w, images/flood-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a
@@ -515,8 +522,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://github.com/MauBenavidesS/CPPad" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/CPPad.jpg" alt="" loading="lazy" decoding="async" width="500"
-								height="500">
+							<img src="images/cppad.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/cppad.webp 84w, images/cppad-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a href="https://github.com/MauBenavidesS/CPPad" target="_blank"
@@ -535,8 +544,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://github.com/Juanpalai/Connect-4" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/connect4.jpg" alt="" loading="lazy" decoding="async" width="462"
-								height="500">
+							<img src="images/connect4.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/connect4.webp 84w, images/connect4-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a href="https://github.com/Juanpalai/Connect-4" target="_blank"
@@ -551,8 +562,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://github.com/Juanpalai/Music_Girl" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/MuicGirl.jpg" alt="" loading="lazy" decoding="async" width="800"
-								height="450">
+							<img src="images/music-girl.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/music-girl.webp 84w, images/music-girl-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a href="https://github.com/Juanpalai/Music_Girl" target="_blank"
@@ -566,8 +579,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://github.com/Juanpalai/Book-Towers" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/BookTower.jpg" alt="" loading="lazy" decoding="async" width="800"
-								height="450">
+							<img src="images/book-tower.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/book-tower.webp 84w, images/book-tower-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a href="https://github.com/Juanpalai/Book-Towers" target="_blank"
@@ -581,8 +596,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://github.com/Juanpalai/Griffin-Tamgagochi" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/tamagochi.jpg" alt="" loading="lazy" decoding="async" width="800"
-								height="450">
+							<img src="images/tamagotchi.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/tamagotchi.webp 84w, images/tamagotchi-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a href="https://github.com/Juanpalai/Griffin-Tamgagochi"
@@ -597,8 +614,10 @@
 					<li class="mini">
 						<a class="mini-thumb" href="https://github.com/Juanpalai/Beach-Breaker" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/BeachBreaker.jpg" alt="" loading="lazy" decoding="async" width="700"
-								height="615">
+							<img src="images/beach-breaker.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/beach-breaker.webp 84w, images/beach-breaker-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
 						<div class="mini-body">
 							<p class="mini-title"><a href="https://github.com/Juanpalai/Beach-Breaker"
@@ -735,7 +754,10 @@
 		<section class="section section-alt" id="about-section">
 			<div class="container about-grid">
 				<figure class="about-photo">
-					<img src="images/about.jpg" alt="Portrait of Juan Pablo Lagos" loading="lazy" decoding="async">
+					<img src="images/about.webp" alt="Portrait of Juan Pablo Lagos" loading="lazy" decoding="async"
+						width="340" height="213"
+						srcset="images/about.webp 340w, images/about-2x.webp 680w"
+						sizes="(max-width: 767px) min(420px, calc(100vw - 48px)), 340px">
 				</figure>
 				<div>
 					<header class="section-head">
