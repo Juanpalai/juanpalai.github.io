@@ -805,12 +805,6 @@ html.js .scope.is-drawn .scope-dot {
 	margin: 0;
 }
 
-.todo-marker {
-	color: var(--status);
-	font-weight: 600;
-	white-space: nowrap;
-}
-
 .case-visual {
 	margin: 0;
 }
