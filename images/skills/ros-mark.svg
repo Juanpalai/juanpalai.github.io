@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.8 115.8" role="img" aria-label="ROS nine-dot mark">
+	<!-- Official ROS "nine dot" mark geometry (per Open Robotics brand assets).
+	     Open Robotics guidance: ROS 2 is represented by the ROS mark plus the
+	     version in the label, so both chips use this file. -->
+	<circle cx="12.9" cy="12.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="57.9" cy="12.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="102.9" cy="12.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="12.9" cy="57.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="57.9" cy="57.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="102.9" cy="57.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="12.9" cy="102.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="57.9" cy="102.9" r="12.9" fill="#eaf0f7" />
+	<circle cx="102.9" cy="102.9" r="12.9" fill="#eaf0f7" />
+</svg>

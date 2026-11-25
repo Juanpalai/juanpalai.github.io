@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.88 35.6" role="img" aria-label="Autoware mark">
+	<!-- Autoware Foundation logomark, extracted from the official
+	     .github/assets/banner-autoware.svg in the autowarefoundation/autoware
+	     repository. -->
+	<path fill="#eaf0f7" d="M30.83,8.86 L15.39,0 L0,8.94 L0.05,26.74 L15.4,35.6 L30.88,26.66 Z M15.39,1.57 L29.43,25.23 L15.39,16.41 L1.6,25.21 Z M15.39,17.66 L29.07,26.25 L1.97,26.23 Z M15.7,1.4 L29.77,9.47 L29.81,25.19 Z M15.4,1.22 L15.4,1.22 L15.39,1.22 Z M15.09,1.4 L1.1,25.37 L1.06,9.55 Z M15.39,34.37 L1.91,26.59 L28.85,26.61 Z" />
+</svg>

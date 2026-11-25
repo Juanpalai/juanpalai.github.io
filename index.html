@@ -24,6 +24,9 @@
 		content="Robotics software engineer specialized in simulation, building autonomous-driving and delivery simulators and ROS 2 / Autoware stacks. Based in Tokyo.">
 	<meta property="og:url" content="https://juanpalai.github.io/">
 	<meta property="og:image" content="https://juanpalai.github.io/images/og-cover.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Juan Pablo Lagos, robotics simulation engineer, based in Tokyo.">
 	<meta property="og:locale" content="en_US">
 
 	<!-- Twitter Card -->
@@ -40,7 +43,7 @@
 			"@type": "Person",
 			"name": "Juan Pablo Lagos Idrobo",
 			"url": "https://juanpalai.github.io/",
-			"image": "https://juanpalai.github.io/images/about.jpg",
+			"image": "https://juanpalai.github.io/images/about.webp",
 			"jobTitle": "Robotics Software Engineer",
 			"description": "Robotics software engineer specialized in simulation and autonomous systems, built on a foundation in realtime engines and data science.",
 			"email": "mailto:juan.pablo.lagosi@gmail.com",
@@ -53,14 +56,12 @@
 				"https://github.com/Juanpalai",
 				"https://www.linkedin.com/in/juanpalai/"
 			],
-			"knowsAbout": ["Robotics", "Autonomous Driving", "Simulation", "ROS 2", "Autoware", "Python", "C++"]
+			"knowsAbout": ["Robotics", "Autonomous Driving", "Simulation", "ROS 2", "Autoware", "Nav2", "Unity", "Unreal Engine", "Python", "C++"]
 		}
 	</script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-		rel="stylesheet">
+	<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 	<link rel="stylesheet" href="css/site.css">
 </head>
@@ -89,8 +90,7 @@
 					<li><a class="nav-link" href="#skills-section">Skills</a></li>
 					<li><a class="nav-link" href="#about-section">About</a></li>
 					<li><a class="nav-link" href="#contact-section">Contact</a></li>
-					<li class="nav-cta"><a class="btn btn-primary btn-sm"
-							href="https://drive.google.com/file/d/1z6cHlLJHLspADo3UOHLw2Xzj8cRdyYVr/view?usp=sharing"
+					<li class="nav-cta"><a class="btn btn-primary btn-sm" href="files/resume.pdf"
 							target="_blank" rel="noopener noreferrer">Resume
 							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 								stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -127,9 +127,7 @@
 
 					<div class="hero-actions">
 						<a class="btn btn-primary" href="#side-projects-section">See my work</a>
-						<a class="btn btn-ghost"
-							href="https://drive.google.com/file/d/1z6cHlLJHLspADo3UOHLw2Xzj8cRdyYVr/view?usp=sharing"
-							target="_blank" rel="noopener noreferrer">Download resume
+						<a class="btn btn-ghost" href="files/resume.pdf" download>Download resume
 							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 								stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 								<path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" />
@@ -197,12 +195,13 @@
 							<h3>LOMBY Inc</h3>
 							<p class="tl-role">Software Engineer</p>
 							<ul class="tl-list">
-								<li>Developed custom simulators in Unity to test Autoware updates in realistic
-									environments.</li>
-								<li>Simulated key sensors such as LiDAR, camera, and IMU for accurate system
-									evaluation.</li>
-								<li>Created 3D point-cloud-based map models to support autonomous delivery robot
-									testing.</li>
+								<li>Build custom simulators in Unity that recreate realistic operating
+									conditions, so Autoware updates can be exercised end-to-end before
+									deployment.</li>
+								<li>Model key sensors — LiDAR, camera, and IMU — inside the simulator, so
+									system evaluation reflects what the robot perceives in the field.</li>
+								<li>Create 3D point-cloud-based map models that give delivery robots a
+									consistent world to navigate during testing.</li>
 							</ul>
 						</div>
 					</article>
@@ -213,14 +212,17 @@
 							<h3>Toyota Motor Corporation</h3>
 							<p class="tl-role">Software Engineer</p>
 							<ul class="tl-list">
-								<li>Facilitated Agile methodologies, including Scrum execution.</li>
+								<li>Built an autonomous-driving simulator in Unreal Engine using Blueprints
+									and C++, so autonomy scenarios could be exercised in simulation before
+									real-hardware runs.</li>
+								<li>Developed ROS nodes in C++ and Python for Autoware.AI and Autoware
+									Universe.</li>
+								<li>Contributed to computer-vision projects for vehicle remote control and
+									robot coordination.</li>
+								<li>Designed an automated report-generation system using Pandas, replacing
+									manual report assembly.</li>
 								<li>Developed Python-based backends with Flask and Socket.io.</li>
-								<li>Designed an automated report-generation system using Pandas.</li>
-								<li>Built an autonomous-driving simulator in Unreal Engine using blueprints and C++.
-								</li>
-								<li>Developed ROS nodes in C++ and Python for Autoware.AI and Autoware Universe.</li>
-								<li>Contributed to computer-vision projects for vehicle remote control and robot
-									coordination.</li>
+								<li>Facilitated Agile methodologies, including Scrum execution.</li>
 							</ul>
 						</div>
 					</article>
@@ -231,9 +233,11 @@
 							<h3>Tokyo Communication Art Training School</h3>
 							<p class="tl-role">Programming Tutor</p>
 							<ul class="tl-list">
-								<li>Guided first-year students in programming and realtime application development in Unity.</li>
-								<li>Collaborated with the professor reviewing and grading student work.</li>
-								<li>Recommended practice and materials to keep improving outside tutoring hours.</li>
+								<li>Guided first-year students through programming and realtime application
+									development in Unity.</li>
+								<li>Reviewed and graded student work alongside the professor.</li>
+								<li>Recommended practice and materials to keep students improving outside
+									tutoring hours.</li>
 							</ul>
 						</div>
 					</article>
@@ -247,186 +251,377 @@
 			<div class="container">
 				<header class="section-head">
 					<h2><span class="sec-marker" aria-hidden="true"></span>Projects</h2>
-					<p class="section-sub">Things I build in my own time, models, tools, and simulators.</p>
+					<p class="section-sub">Selected simulation and robotics work first, then the models, tools, and
+					games I build in my own time.</p>
 				</header>
 
-				<h3 class="group-title">Data science</h3>
+				<h3 class="group-title group-title-primary">Selected work</h3>
 
-				<div class="proj-grid">
-
-					<article class="proj">
-						<a class="proj-thumb" href="https://www.kaggle.com/code/juanpablolagos/titanic-logistic-regression-model?scriptVersionId=159913515"
-							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/titanic.jpg" alt="" loading="lazy" decoding="async">
-						</a>
-						<div class="proj-body">
-							<h4><a href="https://www.kaggle.com/code/juanpablolagos/titanic-logistic-regression-model?scriptVersionId=159913515"
-									target="_blank" rel="noopener noreferrer">Titanic, Machine Learning from Disaster<span
-										class="arrow" aria-hidden="true"></span></a></h4>
-							<p>Kaggle competition predicting which passengers survived the Titanic shipwreck with
-								machine learning.</p>
-							<ul class="tags"><li>Python</li><li>scikit-learn</li></ul>
-						</div>
-					</article>
-
-					<article class="proj">
-						<a class="proj-thumb" href="https://www.kaggle.com/code/juanpablolagos/obesity-risk-lgbmclassifier"
-							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/Obesity_Risk.jpg" alt="" loading="lazy" decoding="async">
-						</a>
-						<div class="proj-body">
-							<h4><a href="https://www.kaggle.com/code/juanpablolagos/obesity-risk-lgbmclassifier"
-									target="_blank" rel="noopener noreferrer">Multi-Class Prediction of Obesity Risk<span
-										class="arrow" aria-hidden="true"></span></a></h4>
-							<p>Predicts individual obesity risk linked to cardiovascular disease with an
-								LGBMClassifier model.</p>
-							<ul class="tags"><li>Python</li><li>LightGBM</li></ul>
-						</div>
-					</article>
-
-					<article class="proj">
-						<a class="proj-thumb" href="https://www.kaggle.com/code/juanpablolagos/regression-flood-prediction/notebook"
-							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/Flood.jpg" alt="" loading="lazy" decoding="async">
-						</a>
-						<div class="proj-body">
-							<h4><a href="https://www.kaggle.com/code/juanpablolagos/regression-flood-prediction/notebook"
-									target="_blank" rel="noopener noreferrer">Regression with a Flood Prediction Dataset<span
-										class="arrow" aria-hidden="true"></span></a></h4>
-							<p>End-to-end workflow predicting flooding probability, with exploratory analysis and
-								machine-learning models.</p>
-							<ul class="tags"><li>Python</li><li>scikit-learn</li><li>EDA</li></ul>
-						</div>
-					</article>
-
-				</div>
-
-				<h3 class="group-title">Software development</h3>
-
-				<div class="proj-grid">
-
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/AirSim-ROS-Wrapper-for-Autoware"
-							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/airsim.jpg" alt="" loading="lazy" decoding="async">
-						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/AirSim-ROS-Wrapper-for-Autoware"
+				<article class="case">
+					<div class="case-grid">
+						<div class="case-body">
+							<h4 class="case-title"><a
+									href="https://github.com/Juanpalai/AirSim-ROS-Wrapper-for-Autoware"
 									target="_blank" rel="noopener noreferrer">AirSim ROS Wrapper for Autoware<span
 										class="arrow" aria-hidden="true"></span></a></h4>
-							<p>Modified ROS packages integrating AirSim, a high-fidelity autonomous-vehicle simulator,
-								with Autoware.</p>
-							<ul class="tags"><li>ROS</li><li>Autoware</li><li>C++</li></ul>
+							<p class="case-kicker">A closed loop between a high-fidelity vehicle simulator and the
+								full Autoware autonomy stack.</p>
+							<dl class="case-facts">
+								<div class="fact">
+									<dt>Problem</dt>
+									<dd>Autonomy changes need to face realistic sensors and physics before they can
+										be trusted on a real vehicle.</dd>
+								</div>
+								<div class="fact">
+									<dt>Built</dt>
+									<dd>Modified ROS packages that feed AirSim's simulated LiDAR, camera, and IMU
+										streams into Autoware, so the complete autonomy stack runs against a
+										simulated vehicle.</dd>
+								</div>
+								<div class="fact">
+									<dt>Stack</dt>
+									<dd>
+										<ul class="tags">
+											<li>AirSim</li>
+											<li>ROS</li>
+											<li>Autoware</li>
+											<li>C++</li>
+										</ul>
+									</dd>
+								</div>
+								<div class="fact">
+									<dt>Result</dt>
+									<dd>Autoware runs end-to-end against simulated sensors, from perception through
+										planning to the vehicle commands that drive the simulated car.</dd>
+								</div>
+							</dl>
 						</div>
-					</article>
 
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/MauBenavidesS/CPPad" target="_blank"
-							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/CPPad.jpg" alt="" loading="lazy" decoding="async">
+						<!-- Media slot: replace this diagram with an approved GIF/video/screenshot when available. -->
+						<figure class="case-visual">
+							<svg class="dgm" viewBox="0 0 560 300" role="img"
+								aria-labelledby="airsim-dgm-title airsim-dgm-desc">
+								<title id="airsim-dgm-title">AirSim to Autoware data flow</title>
+								<desc id="airsim-dgm-desc">AirSim simulates the vehicle and its sensors, the ROS
+									wrapper publishes them as topics, and Autoware's vehicle commands loop back
+									into the simulator.</desc>
+								<defs>
+									<pattern id="dgm-grid-a" width="26" height="26" patternUnits="userSpaceOnUse">
+										<path class="dgm-gridline" d="M26 0H0V26" />
+									</pattern>
+								</defs>
+								<rect x="0.5" y="0.5" width="559" height="299" fill="url(#dgm-grid-a)" />
+
+								<rect class="dgm-box" x="20" y="52" width="140" height="170" rx="3" />
+								<text class="dgm-box-label" x="30" y="78">AirSim simulator</text>
+								<circle class="dgm-dot" cx="40" cy="106" r="4" />
+								<path class="dgm-rays" d="M47 100l9-6M47 106h11M47 112l9 6" />
+								<text class="dgm-sub" x="68" y="110">LiDAR</text>
+								<rect class="dgm-glyph" x="33" y="130" width="14" height="10" rx="1.5" />
+								<circle class="dgm-glyph-fill" cx="40" cy="135" r="2.4" />
+								<text class="dgm-sub" x="68" y="140">Camera</text>
+								<circle class="dgm-glyph" cx="40" cy="164" r="6.5" />
+								<path class="dgm-glyph" d="M36.5 164h7M40 160.5v7" />
+								<text class="dgm-sub" x="68" y="168">IMU</text>
+								<text class="dgm-sub dgm-dim" x="30" y="206">vehicle · environment</text>
+
+								<rect class="dgm-box dgm-box-accent" x="235" y="96" width="100" height="48" rx="3" />
+								<text class="dgm-box-label" x="245" y="117">ROS wrapper</text>
+								<text class="dgm-sub dgm-dim" x="245" y="132">this project</text>
+
+								<rect class="dgm-box" x="400" y="52" width="140" height="170" rx="3" />
+								<text class="dgm-box-label" x="410" y="78">Autoware</text>
+								<text class="dgm-sub" x="410" y="106">sensing</text>
+								<text class="dgm-sub" x="410" y="130">localization</text>
+								<text class="dgm-sub" x="410" y="154">planning</text>
+								<text class="dgm-sub" x="410" y="178">control</text>
+
+								<path class="dgm-flow" d="M160 120h67" />
+								<path class="dgm-head" d="M227 116l8 4-8 4z" />
+								<text class="dgm-topic" x="197" y="100" text-anchor="middle">simulated</text>
+								<text class="dgm-topic" x="197" y="111" text-anchor="middle">sensors</text>
+								<path class="dgm-flow" d="M335 120h65" />
+								<path class="dgm-head" d="M392 116l8 4-8 4z" />
+								<text class="dgm-topic" x="367" y="100" text-anchor="middle">sensor</text>
+								<text class="dgm-topic" x="367" y="111" text-anchor="middle">topics</text>
+
+								<path class="dgm-back" d="M470 222v26H90v-26" />
+								<path class="dgm-head-back" d="M86 222l4-8 4 8z" />
+								<text class="dgm-topic" x="280" y="266" text-anchor="middle">vehicle commands
+								</text>
+							</svg>
+							<figcaption>AirSim publishes simulated sensor data, the wrapper turns it into ROS
+								topics, and Autoware's vehicle commands loop back into the simulator.</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<article class="case case-flip">
+					<div class="case-grid">
+						<div class="case-body">
+							<h4 class="case-title"><a href="https://github.com/Juanpalai/RandomNav2Controller"
+									target="_blank" rel="noopener noreferrer">RandomNav2Controller<span
+										class="arrow" aria-hidden="true"></span></a></h4>
+							<p class="case-kicker">A ROS&nbsp;2 package that keeps Nav2 driving toward goals
+								nobody hand-picked.</p>
+							<dl class="case-facts">
+								<div class="fact">
+									<dt>Problem</dt>
+									<dd>Testing a navigation stack against one hand-picked route says little about
+										how it behaves under goals nobody chose.</dd>
+								</div>
+								<div class="fact">
+									<dt>Built</dt>
+									<dd>A ROS&nbsp;2 package that generates random goals and drives a TurtleBot3
+										toward them through the Nav2 stack in a simulated environment.</dd>
+								</div>
+								<div class="fact">
+									<dt>Stack</dt>
+									<dd>
+										<ul class="tags">
+											<li>ROS&nbsp;2</li>
+											<li>Nav2</li>
+											<li>TurtleBot3</li>
+										</ul>
+									</dd>
+								</div>
+								<div class="fact">
+									<dt>Result</dt>
+									<dd>The robot keeps navigating toward goals it has never seen, exercising
+										Nav2's planning and control servers in a continuous loop.</dd>
+								</div>
+							</dl>
+						</div>
+
+						<!-- Media slot: replace this diagram with an approved GIF/video/screenshot when available. -->
+						<figure class="case-visual">
+							<svg class="dgm" viewBox="0 0 560 300" role="img"
+								aria-labelledby="nav2-dgm-title nav2-dgm-desc">
+								<title id="nav2-dgm-title">RandomNav2Controller data flow</title>
+								<desc id="nav2-dgm-desc">A goal sampler sends random goals to the Nav2 stack, which
+									drives a TurtleBot3 in a simulated world while odometry closes the loop back
+									into the stack.</desc>
+								<defs>
+									<pattern id="dgm-grid-b" width="26" height="26" patternUnits="userSpaceOnUse">
+										<path class="dgm-gridline" d="M26 0H0V26" />
+									</pattern>
+								</defs>
+								<rect x="0.5" y="0.5" width="559" height="299" fill="url(#dgm-grid-b)" />
+
+								<rect class="dgm-box" x="20" y="92" width="140" height="76" rx="3" />
+								<text class="dgm-box-label" x="30" y="118">Goal sampler</text>
+								<text class="dgm-sub dgm-dim" x="30" y="136">random goals</text>
+								<path class="dgm-goal" d="M38 148l5 5-5 5-5-5z" />
+								<path class="dgm-goal" d="M60 148l5 5-5 5-5-5z" />
+								<path class="dgm-goal" d="M82 148l5 5-5 5-5-5z" />
+
+								<rect class="dgm-box" x="220" y="56" width="140" height="160" rx="3" />
+								<text class="dgm-box-label" x="230" y="82">Nav2 stack</text>
+								<text class="dgm-sub" x="230" y="112">BT navigator</text>
+								<text class="dgm-sub" x="230" y="138">planner server</text>
+								<text class="dgm-sub" x="230" y="164">controller server</text>
+
+								<rect class="dgm-box" x="420" y="92" width="120" height="76" rx="3" />
+								<text class="dgm-box-label" x="430" y="118">TurtleBot3</text>
+								<text class="dgm-sub dgm-dim" x="430" y="136">simulated world</text>
+
+								<path class="dgm-flow" d="M160 130h52" />
+								<path class="dgm-head" d="M212 126l8 4-8 4z" />
+								<text class="dgm-topic" x="190" y="120" text-anchor="middle">goal pose</text>
+								<path class="dgm-flow" d="M360 130h52" />
+								<path class="dgm-head" d="M412 126l8 4-8 4z" />
+								<text class="dgm-topic" x="390" y="120" text-anchor="middle">cmd_vel</text>
+
+								<path class="dgm-back" d="M480 168v42H290v6" />
+								<path class="dgm-head-back" d="M286 212l4 8 4-8z" />
+								<text class="dgm-topic" x="385" y="230" text-anchor="middle">odometry · map
+								</text>
+							</svg>
+							<figcaption>The sampler picks random goals, Nav2 plans and drives toward them, and
+								odometry closes the loop back into the stack.</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<h3 class="group-title">More projects</h3>
+
+				<h4 class="minor-group">Data science</h4>
+
+				<ul class="mini-grid">
+
+					<li class="mini">
+						<a class="mini-thumb" href="https://www.kaggle.com/code/juanpablolagos/titanic-logistic-regression-model?scriptVersionId=159913515"
+							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+							<img src="images/titanic.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/titanic.webp 84w, images/titanic-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/MauBenavidesS/CPPad" target="_blank"
-									rel="noopener noreferrer">CPPad<span class="arrow" aria-hidden="true"></span></a></h4>
-							<p>CPPad is a simple text editor implemented in C++ using the Win32 API.</p>
+						<div class="mini-body">
+							<p class="mini-title"><a
+									href="https://www.kaggle.com/code/juanpablolagos/titanic-logistic-regression-model?scriptVersionId=159913515"
+									target="_blank" rel="noopener noreferrer">Titanic, Machine Learning from Disaster<span
+										class="arrow" aria-hidden="true"></span></a></p>
+							<p class="mini-desc">Kaggle competition predicting which passengers survived the
+								Titanic shipwreck with machine learning.</p>
+							<ul class="tags"><li>Python</li><li>scikit-learn</li></ul>
+						</div>
+					</li>
+
+					<li class="mini">
+						<a class="mini-thumb" href="https://www.kaggle.com/code/juanpablolagos/obesity-risk-lgbmclassifier"
+							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+							<img src="images/obesity-risk.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/obesity-risk.webp 84w, images/obesity-risk-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
+						</a>
+						<div class="mini-body">
+							<p class="mini-title"><a
+									href="https://www.kaggle.com/code/juanpablolagos/obesity-risk-lgbmclassifier"
+									target="_blank" rel="noopener noreferrer">Multi-Class Prediction of Obesity Risk<span
+										class="arrow" aria-hidden="true"></span></a></p>
+							<p class="mini-desc">Predicts individual obesity risk linked to cardiovascular disease
+								with an LGBMClassifier model.</p>
+							<ul class="tags"><li>Python</li><li>LightGBM</li></ul>
+						</div>
+					</li>
+
+					<li class="mini">
+						<a class="mini-thumb" href="https://www.kaggle.com/code/juanpablolagos/regression-flood-prediction/notebook"
+							target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+							<img src="images/flood.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/flood.webp 84w, images/flood-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
+						</a>
+						<div class="mini-body">
+							<p class="mini-title"><a
+									href="https://www.kaggle.com/code/juanpablolagos/regression-flood-prediction/notebook"
+									target="_blank" rel="noopener noreferrer">Regression with a Flood Prediction Dataset<span
+										class="arrow" aria-hidden="true"></span></a></p>
+							<p class="mini-desc">End-to-end workflow predicting flooding probability, with
+								exploratory analysis and machine-learning models.</p>
+							<ul class="tags"><li>Python</li><li>scikit-learn</li><li>EDA</li></ul>
+						</div>
+					</li>
+
+				</ul>
+
+				<h4 class="minor-group">Software development</h4>
+
+				<ul class="mini-grid">
+
+					<li class="mini">
+						<a class="mini-thumb" href="https://github.com/MauBenavidesS/CPPad" target="_blank"
+							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+							<img src="images/cppad.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/cppad.webp 84w, images/cppad-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
+						</a>
+						<div class="mini-body">
+							<p class="mini-title"><a href="https://github.com/MauBenavidesS/CPPad" target="_blank"
+									rel="noopener noreferrer">CPPad<span class="arrow" aria-hidden="true"></span></a></p>
+							<p class="mini-desc">A simple text editor implemented in C++ using the Win32 API.</p>
 							<ul class="tags"><li>C++</li><li>Win32</li></ul>
 						</div>
-					</article>
+					</li>
 
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/RandomNav2Controller" target="_blank"
+				</ul>
+
+				<h4 class="minor-group">Early game development</h4>
+
+				<ul class="mini-grid">
+
+					<li class="mini">
+						<a class="mini-thumb" href="https://github.com/Juanpalai/Connect-4" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/RandomNav2Controller.jpg" alt="" loading="lazy" decoding="async">
+							<img src="images/connect4.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/connect4.webp 84w, images/connect4-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/RandomNav2Controller" target="_blank"
-									rel="noopener noreferrer">RandomNav2Controller<span class="arrow"
-										aria-hidden="true"></span></a></h4>
-							<p>ROS&nbsp;2 package using the Nav2 stack to drive a TurtleBot3 to random goals in a
-								simulated environment.</p>
-							<ul class="tags"><li>ROS&nbsp;2</li><li>Nav2</li><li>TurtleBot3</li></ul>
-						</div>
-					</article>
-
-				</div>
-
-				<h3 class="group-title">Early game development</h3>
-
-				<div class="proj-grid">
-
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/Connect-4" target="_blank"
-							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/connect4.jpg" alt="" loading="lazy" decoding="async">
-						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/Connect-4" target="_blank"
+						<div class="mini-body">
+							<p class="mini-title"><a href="https://github.com/Juanpalai/Connect-4" target="_blank"
 									rel="noopener noreferrer">Connect 4 AI<span class="arrow"
-										aria-hidden="true"></span></a></h4>
-							<p>Connect 4 in Java with Swing, played against a simple AI that is harder to beat than it
-								looks.</p>
+										aria-hidden="true"></span></a></p>
+							<p class="mini-desc">Connect 4 in Java with Swing, played against a simple AI that is
+								harder to beat than it looks.</p>
 							<ul class="tags"><li>Java</li><li>Swing</li></ul>
 						</div>
-					</article>
+					</li>
 
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/Music_Girl" target="_blank"
+					<li class="mini">
+						<a class="mini-thumb" href="https://github.com/Juanpalai/Music_Girl" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/MuicGirl.jpg" alt="" loading="lazy" decoding="async">
+							<img src="images/music-girl.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/music-girl.webp 84w, images/music-girl-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/Music_Girl" target="_blank"
+						<div class="mini-body">
+							<p class="mini-title"><a href="https://github.com/Juanpalai/Music_Girl" target="_blank"
 									rel="noopener noreferrer">Music Girl<span class="arrow"
-										aria-hidden="true"></span></a></h4>
-							<p>A 2D action-platformer built in Unity.</p>
+										aria-hidden="true"></span></a></p>
+							<p class="mini-desc">A 2D action-platformer built in Unity.</p>
 							<ul class="tags"><li>Unity</li><li>C#</li></ul>
 						</div>
-					</article>
+					</li>
 
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/Book-Towers" target="_blank"
+					<li class="mini">
+						<a class="mini-thumb" href="https://github.com/Juanpalai/Book-Towers" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/BookTower.jpg" alt="" loading="lazy" decoding="async">
+							<img src="images/book-tower.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/book-tower.webp 84w, images/book-tower-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/Book-Towers" target="_blank"
+						<div class="mini-body">
+							<p class="mini-title"><a href="https://github.com/Juanpalai/Book-Towers" target="_blank"
 									rel="noopener noreferrer">Book Tower<span class="arrow"
-										aria-hidden="true"></span></a></h4>
-							<p>A 3D strategy game developed in Unity.</p>
+										aria-hidden="true"></span></a></p>
+							<p class="mini-desc">A 3D strategy game developed in Unity.</p>
 							<ul class="tags"><li>Unity</li><li>C#</li></ul>
 						</div>
-					</article>
+					</li>
 
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/Griffin-Tamgagochi" target="_blank"
+					<li class="mini">
+						<a class="mini-thumb" href="https://github.com/Juanpalai/Griffin-Tamgagochi" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/tamagochi.jpg" alt="" loading="lazy" decoding="async">
+							<img src="images/tamagotchi.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/tamagotchi.webp 84w, images/tamagotchi-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/Griffin-Tamgagochi" target="_blank"
-									rel="noopener noreferrer">Griffin Tamagotchi<span class="arrow"
-										aria-hidden="true"></span></a></h4>
-							<p>A tamagotchi built in Unreal Engine 5 Early Access with the Blueprint visual scripting
-								system.</p>
+						<div class="mini-body">
+							<p class="mini-title"><a href="https://github.com/Juanpalai/Griffin-Tamgagochi"
+									target="_blank" rel="noopener noreferrer">Griffin Tamagotchi<span class="arrow"
+										aria-hidden="true"></span></a></p>
+							<p class="mini-desc">A tamagotchi built in Unreal Engine 5 Early Access with the
+								Blueprint visual scripting system.</p>
 							<ul class="tags"><li>Unreal&nbsp;5</li><li>Blueprint</li></ul>
 						</div>
-					</article>
+					</li>
 
-					<article class="proj">
-						<a class="proj-thumb" href="https://github.com/Juanpalai/Beach-Breaker" target="_blank"
+					<li class="mini">
+						<a class="mini-thumb" href="https://github.com/Juanpalai/Beach-Breaker" target="_blank"
 							rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-							<img src="images/BeachBreaker.jpg" alt="" loading="lazy" decoding="async">
+							<img src="images/beach-breaker.webp" alt="" loading="lazy" decoding="async"
+								width="84" height="63"
+								srcset="images/beach-breaker.webp 84w, images/beach-breaker-2x.webp 168w"
+								sizes="(max-width: 560px) 64px, 84px">
 						</a>
-						<div class="proj-body">
-							<h4><a href="https://github.com/Juanpalai/Beach-Breaker" target="_blank"
-									rel="noopener noreferrer">Beach Breaker<span class="arrow"
-										aria-hidden="true"></span></a></h4>
-							<p>A match-3 game built in Unity for Android devices.</p>
+						<div class="mini-body">
+							<p class="mini-title"><a href="https://github.com/Juanpalai/Beach-Breaker"
+									target="_blank" rel="noopener noreferrer">Beach Breaker<span class="arrow"
+										aria-hidden="true"></span></a></p>
+							<p class="mini-desc">A match-3 game built in Unity for Android devices.</p>
 							<ul class="tags"><li>Unity</li><li>C#</li><li>Android</li></ul>
 						</div>
-					</article>
+					</li>
 
-				</div>
+				</ul>
 			</div>
 		</section>
 
@@ -439,6 +634,20 @@
 				</header>
 
 				<div class="skillset">
+					<div class="skill-group">
+						<h3 class="skill-cat">Robotics &amp; autonomy</h3>
+						<ul class="chips">
+							<li class="chip"><img src="images/skills/ros-mark.svg" alt="" width="20"
+									height="20">ROS</li>
+							<li class="chip"><img src="images/skills/ros-mark.svg" alt="" width="20"
+									height="20">ROS&nbsp;2</li>
+							<li class="chip"><img src="images/skills/autoware-mark.svg" alt="" width="20"
+									height="20">Autoware</li>
+							<li class="chip"><img src="images/skills/nav2-logo.png" alt="" loading="lazy"
+									decoding="async" width="20" height="20">Nav2</li>
+						</ul>
+					</div>
+
 					<div class="skill-group">
 						<h3 class="skill-cat">Programming languages</h3>
 						<ul class="chips">
@@ -458,10 +667,6 @@
 									width="20" height="20">Flask</li>
 							<li class="chip"><img src="images/skills/OpenCV.png" alt="" loading="lazy"
 									decoding="async" width="20" height="20">OpenCV</li>
-							<li class="chip"><img src="images/skills/ROS.png" alt="" loading="lazy" decoding="async"
-									width="20" height="20">ROS</li>
-							<li class="chip"><img src="images/skills/ROS.png" alt="" loading="lazy" decoding="async"
-									width="20" height="20">ROS 2</li>
 							<li class="chip"><img src="images/skills/Pandas.png" alt="" loading="lazy"
 									decoding="async" width="20" height="20">Pandas</li>
 							<li class="chip"><img src="images/skills/Socket-io.png" alt="" loading="lazy"
@@ -542,7 +747,10 @@
 		<section class="section section-alt" id="about-section">
 			<div class="container about-grid">
 				<figure class="about-photo">
-					<img src="images/about.jpg" alt="Portrait of Juan Pablo Lagos" loading="lazy" decoding="async">
+					<img src="images/about.webp" alt="Portrait of Juan Pablo Lagos" loading="lazy" decoding="async"
+						width="340" height="213"
+						srcset="images/about.webp 340w, images/about-2x.webp 680w"
+						sizes="(max-width: 767px) min(420px, calc(100vw - 48px)), 340px">
 				</figure>
 				<div>
 					<header class="section-head">
@@ -551,9 +759,7 @@
 					<p class="about-text">Robotics software engineer specialized in simulation. At Toyota and LOMBY I have built driving and delivery simulators in Unity and Unreal, developed ROS&nbsp;2 nodes for Autoware, and worked across the whole pipeline, from sensor-accurate virtual worlds to robots running on real hardware.</p>
 					<p class="about-text">My background is in game development, where I learned realtime engines, rendering, and interaction design. I now apply that foundation to simulation for robotics and autonomous systems. I work mainly in Python and C++, and I care about open source and the Linux ecosystem.</p>
 					<div class="hero-actions">
-						<a class="btn btn-primary"
-							href="https://drive.google.com/file/d/1z6cHlLJHLspADo3UOHLw2Xzj8cRdyYVr/view?usp=sharing"
-							target="_blank" rel="noopener noreferrer">Download resume
+						<a class="btn btn-primary" href="files/resume.pdf" download>Download resume
 							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 								stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 								<path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" />
@@ -582,7 +788,7 @@
 							</svg>
 						</span>
 						<span class="contact-label">Email</span>
-						<a href="mailto:juan.pablo.lagosi@gmail.com">Email</a>
+						<a href="mailto:juan.pablo.lagosi@gmail.com">juan.pablo.lagosi@gmail.com</a>
 					</li>
 					<li class="contact-item">
 						<span class="contact-icon" aria-hidden="true">
@@ -606,19 +812,6 @@
 						</span>
 						<span class="contact-label">GitHub</span>
 						<a href="https://github.com/Juanpalai" target="_blank" rel="noopener noreferrer">@Juanpalai</a>
-					</li>
-					<li class="contact-item">
-						<span class="contact-icon" aria-hidden="true">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-								stroke-linecap="round" stroke-linejoin="round">
-								<circle cx="12" cy="12" r="9" />
-								<path d="M3 12h18" />
-								<path d="M12 3a13 13 0 0 1 3.5 9 13 13 0 0 1-3.5 9 13 13 0 0 1-3.5-9 13 13 0 0 1 3.5-9z" />
-							</svg>
-						</span>
-						<span class="contact-label">Website</span>
-						<a href="https://juanpalai.github.io/" target="_blank"
-							rel="noopener noreferrer">juanpalai.github.io</a>
 					</li>
 				</ul>
 
